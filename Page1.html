@@ -124,6 +124,31 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBGWGX-Gyp5V6YBhcG7uklj89_czlI-4nc",
+    authDomain: "future-me-80d6e.firebaseapp.com",
+    databaseURL: "https://future-me-80d6e.firebaseio.com",
+    projectId: "future-me-80d6e",
+    storageBucket: "future-me-80d6e.appspot.com",
+    messagingSenderId: "986770464804",
+    appId: "1:986770464804:web:828b30e289a3de6a12f8b1",
+    measurementId: "G-2RW831T15P"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
 </body>
 
 </html>
