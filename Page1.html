@@ -116,39 +116,24 @@
             <a href="team.html" class="navbar-brand">Team</a>
         </nav>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBGWGX-Gyp5V6YBhcG7uklj89_czlI-4nc",
-    authDomain: "future-me-80d6e.firebaseapp.com",
-    databaseURL: "https://future-me-80d6e.firebaseio.com",
-    projectId: "future-me-80d6e",
-    storageBucket: "future-me-80d6e.appspot.com",
-    messagingSenderId: "986770464804",
-    appId: "1:986770464804:web:828b30e289a3de6a12f8b1",
-    measurementId: "G-2RW831T15P"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
-
+ 
+            <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+          
+            <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+            <script src="/__/firebase/7.17.2/firebase-app.js"></script>
+          
+            <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+            <script src="/__/firebase/7.17.2/firebase-analytics.js"></script>
+          
+            <!-- Add Firebase products that you want to use -->
+            <script src="/__/firebase/7.17.2/firebase-auth.js"></script>
+            <script src="/__/firebase/7.17.2/firebase-firestore.js"></script>
+              <!-- Initialize Firebase -->
+            <script src="/__/firebase/init.js"></script>
+          
 </body>
 
 </html>
