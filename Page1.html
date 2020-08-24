@@ -13,25 +13,27 @@
     <link rel="stylesheet" href="Page1.css">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap" rel="stylesheet">
 
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+	<script>
+		ScrollReveal({ duration: 1000 })
+	</script>
+
     <title>Future me</title>
 </head>
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-md fixed-top">
-        <a href="Page1.html" class="navbar-brand"><img src="Honeycomb2.png"> FUTURE ME</a>
+        <a href="Page1.html" class="navbar-brand"><img src="Icon.png"><strong>         FUTURE ME</strong></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navLinks">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="" class="nav-link">bla</a>
+                    <a href="SignIn.html" class="nav-link"><strong>Anmelden</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a href="SignIn.html" class="nav-link">Anmelden</a>
-                </li>
-                <li class="nav-item">
-                    <a href="SignUp.html" class="nav-link">Registrieren</a>
+                    <a href="SignUp.html" class="nav-link"><strong>Registrieren</strong></a>
                 </li>
             </ul>
         </div>
@@ -40,49 +42,81 @@
     <section id="header" class="jumbotron text-center ">
         <h1 class="display-3">Werde Teil unserer Community</h1>
         <p class="lead">Make the world green again!</p>
-        <a href="SignUp.html" class="btn btn-success">Registrieren</a>
-        <a href="SignIn.html" class="btn btn-success">Anmelden</a>
+        <a href="SignUp.html" class="btn"><strong>Registrieren</strong></a>
+        <a href="SignIn.html" class="btn"><strong>Anmelden</strong></a>
     </section>
 
-    <section id="gallery">
+    <div id="description">
+    <h3><strong>FutureMe versucht die Welt jeden Tag ein bisschen grüner zu machen und durch die vielseitigen Challenges nachhaltiges Verhalten in den Alltag zu integrieren.</strong></h3>
+    </div>
+
+    <canvas id="ctx"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <canvas id="myChart" width="400" height="400"></canvas>
+    <script>
+        var ctx = document.getElementById('myChart');
+        var myChart = new Chart(ctx, {
+            type: 'polarArea',
+            data: {
+                labels: ['Ernährung', 'Bekleidung', 'Mobilität', 'Wohnen', 'Umwelt', 'Soziales'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 20],
+                    backgroundColor: [
+                        'rgba(0, 255, 0, 0.2)',
+                        'rgba(0, 255, 201, 0.2)',
+                        'rgba(128, 0, 128, 0.2)',
+                        'rgba(255, 0, 0, 0.2)',
+                        'rgba(255, 109, 0, 0.2)',
+                        'rgba(255, 255, 0, 0.2)'
+                    ],
+                    borderColor: [
+                    'rgba(0, 255, 0, 1)',
+                        'rgba(0, 255, 201, 1)',
+                        'rgba(128, 0, 128, 1)',
+                        'rgba(255, 0, 0, 1)',
+                        'rgba(255, 109, 0, 1)',
+                        'rgba(255, 255, 0, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+
+
+    </div>
+
+    <section class="gallery">
        <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
                     <div class="card">
-                        <img class="card-img-top" src="imgs/pattern1.jpeg" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">First Thing</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corrupti quam magnam!
-                                Veniam, dolorum facere?
-                                Commodi, ut. Et, itaque quam!</p>
-                            <a href="" class="btn btn-outline-success btn-sm">Download</a>
-                            <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                        <div class="card-body-left">
+                            <p class="card-text"><h2><strong>Greene oder Anfänger? Stelle fest wo du eigentlich stehst</strong></h2></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div class="card">
-                        <img class="card-img-top" src="imgs/pattern2.jpeg" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">First Thing</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corrupti quam magnam!
-                                Veniam, dolorum facere?
-                                Commodi, ut. Et, itaque quam!</p>
-                            <a href="" class="btn btn-outline-success btn-sm">Download</a>
-                            <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                        <div class="card-body-middle">
+                            <p class="card-text-middle"><h2><strong>Breche Muster auf, lerne neue Verhaltensweisen!</strong></h2></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div class="card">
-                        <img class="card-img-top" src="imgs/pattern3.jpeg" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">First Thing</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corrupti quam magnam!
-                                Veniam, dolorum facere?
-                                Commodi, ut. Et, itaque quam!</p>
-                            <a href="" class="btn btn-outline-success btn-sm">Download</a>
-                            <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                        <div class="card-body-right">
+                            <p class="card-text"><h2><strong>Spare eine Menge Geld, denn grün bedeutet oft auch günstiger!</h2></p>
                         </div>
                     </div>
                 </div>
@@ -105,7 +139,7 @@
               <label for="exampleFormControlTextarea1">Deine Ideen:</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-            <div><a href="" class="btn btn-primary">Absenden</a></div>
+            <div><a href="" class="btn">Absenden</a></div>
           </form>
         </form>
 
@@ -113,27 +147,13 @@
         <nav id="footer" class="navbar navbar-light bg-light">
             <a href="Impressum.html" class="navbar-brand">Impressum</a>
             <a href="Datenschutz.html" class="navbar-brand">Datenschutz</a>
-            <a href="team.html" class="navbar-brand">Team</a>
         </nav>
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
- 
-            <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
-          
-            <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-            <script src="/__/firebase/7.17.2/firebase-app.js"></script>
-          
-            <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-            <script src="/__/firebase/7.17.2/firebase-analytics.js"></script>
-          
-            <!-- Add Firebase products that you want to use -->
-            <script src="/__/firebase/7.17.2/firebase-auth.js"></script>
-            <script src="/__/firebase/7.17.2/firebase-firestore.js"></script>
-              <!-- Initialize Firebase -->
-            <script src="/__/firebase/init.js"></script>
-          
+
+           
 </body>
 
 </html>

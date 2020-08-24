@@ -24,13 +24,8 @@ window.onclick = function(event) {
   }
 }
 
-var firebaseConfig = {
-  apiKey: " api-key ",
-  authDomain: " project-id .firebaseapp.com",
-  databaseURL: "https:// project-id .firebaseio.com",
-  projectId: " project-id ",
-  storageBucket: " project-id .appspot.com",
-  messagingSenderId: " sender-id ",
-  appId: " app-id ",
-  measurementId: "G- measurement-id ",
-};
+.showdouble { position: relative;  }
+.singlefade {opacity: 1; transition: opacity 1s; }
+.showdouble .overlay { position: absolute;  }
+.showdouble .overbox { position: absolute; }
+.milky { opacity: 0.5; }
