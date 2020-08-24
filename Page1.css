@@ -35,13 +35,12 @@ nav {
   
   .btn:hover {opacity: 0.9}
 
-  canvas{
+  #canvas {
     font-family: 'Sora', sans-serif;
+    padding-right: 30%;
+    padding-left: 30%;
   }
 
-  .gallery {
-      padding-bottom: 6%;
-  }
 
 .card {
     width: 300px;
