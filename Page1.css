@@ -36,9 +36,10 @@ nav {
   .btn:hover {opacity: 0.9}
 
   #canvas {
-    font-family: 'Sora', sans-serif;
+    font-family: !important'Sora', sans-serif;
     padding-right: 30%;
     padding-left: 30%;
+    padding-bottom: 6%;
   }
 
 
@@ -48,6 +49,8 @@ nav {
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 5%;
+    border: none;
+    opacity: 0.9;
 }
 
 .card-body-left {
@@ -120,13 +123,20 @@ form {
     padding-bottom: 8%;
 }
 
-#challenges {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-top: 5%;
-    background-color: #02C39A;
-    display: block;
+#startseite {
+    background-image: url(Hintergrund.png); 
+    background-size: cover;
+    background-position: center;
+}
+
+#content {
     text-align: center;
+    padding-top: 15%;
+    padding-bottom: 5%;
+}
+
+h1 {
+    opacity: !important 100%;
 }
 
 
@@ -178,6 +188,12 @@ body {
   }
 
   #description {
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  #text {
     padding-top: 5%;
     padding-left: 15%;
     padding-right: 15%;
