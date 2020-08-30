@@ -20,7 +20,6 @@ nav {
     color: honeydew;
 }
 
-
 .btn {
     background-color: #02C39A;
     border: none;
@@ -143,6 +142,8 @@ form {
     background: rgba(40, 56, 48, 0.7);
     margin-top: 10%;
     margin-bottom: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
     color: honeydew;
     border-radius: 3px 15px 5px 30px;
 }
